@@ -142,6 +142,7 @@ A `metatype` is both a type and a self-consistent value. This means that by ente
             "ptd_bytearray" : { "ov.no_param" : null },
             "ptd_int" : { "ov.no_param" : null },
             "ptd_double" : { "ov.no_param" : null },
+            "ptd_bool" : { "ov.no_param" : null },
             "ptd_decimal" : { "ov.with_param" : { "ov.ptd_rec" : {
                     "size" : { "ov.ptd_int" : null },
                     "scale" : { "ov.ptd_int" : null }
@@ -152,7 +153,6 @@ A `metatype` is both a type and a self-consistent value. This means that by ente
             "with_param" : { "ov.with_param" : { "ov.ptd_ref" : "metatype" }}
     }}
 }
-
 ```
 ### Simple types
 

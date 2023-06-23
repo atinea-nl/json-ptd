@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.textareas-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    margin: 0 8px;
+}
+
+.type-container, .value-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 49.9%;
+    justify-content: center;
+    text-align: center;
+}
+
+.type-container .title, .value-container .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.type-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border-color: #dfdfdf;
+    resize: none;
+    box-sizing: border-box;
+    padding: 5px;
+    -moz-tab-size: 4; /* Firefox */
+    tab-size: 4;
+}
+
+.validator-container {
+    height: 15vh;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.validator-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.validate-type {
+    font-size: 18px;
+    width: 250px;
+    border-radius: 8px;
+    padding: 12px 0.25em;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid;
+    background-color: #198754;
+    width: 250px;
+    white-space: nowrap;
+    
+}
+
+.header-button {
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    height: 45px;
+}
+
+.padd {
+    width: 250px;
+}
+
+button:hover {
+    background-color: #157347;
+    cursor: pointer;
+}
+
+.validator-message {
+    padding: 14px 40px;
+    border-radius: 8px;
+    border: 2px solid;
+    width: 50%;
+    min-width: 300px;
+    text-align: center;
+    display: none;
+    margin-bottom: 15px;
+    opacity: 0;
+}
+
+.validator-success {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+}
+
+.validator-error {
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    color: #842029;
+}
+
+.validator-internal {
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    color: #664d03;
+}
+
+.fadeIn {
+    animation: 0.3s fadeIn forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media only screen and (max-width: 1200px) {
+    .padd {
+        display: none;
+    }
+}
+
+

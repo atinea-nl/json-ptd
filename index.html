@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>json:ptd validator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="textareas-container">
+            <div class="type-container">
+                <div class="type-header">
+                    <span class="title">TypeLib</span>
+                    <button class="header-button" onclick=handlePrettyPrint(true)>Make pretty</button>
+                </div>
+                <textarea name="ptd-typelib" id="ptd-typelib" placeholder="json:ptd typeLib"></textarea>
+            </div>
+            <div class="value-container">
+                <div class="type-header">
+                    <span class="title">Value</span>
+                    <button class="header-button" onclick=handlePrettyPrint(false)>Make pretty</button>
+                </div>
+                <textarea name="ptd-value" id="ptd-value" placeholder="json:ptd value"></textarea>
+            </div>
+        </div>
+        <div class="validator-container">
+            <div class="validator-message fadeIn"></div>
+            <div class="validator-bottom">
+                <input class="validate-type" id="ptd-type" type="text" placeholder="json:ptd type"/>
+                <button onclick=handleValidateClick()>Validate</button>
+                <div class="padd"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="ptd-validator.js"></script>
+    <script src="ptd-printer.js"></script>
+</body>
+</html>

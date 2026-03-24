@@ -40,8 +40,9 @@ var jsonptd = {
     
         } else if (Object.hasOwn(type, 'ov.ptd_var')) {
             var fieldHash = type['ov.ptd_var'];
-            var variantName = Object.keys(value)[0];
-            if (variantName === undefined || !variantName.startsWith('ov.') || !(variantName.slice(3) in fieldHash)) return false;
+            var valueKeys = Object.keys(value);
+            var variantName = valueKeys[0];
+            if (valueKeys.length !== 1 || variantName === undefined || !variantName.startsWith('ov.') || !(variantName.slice(3) in fieldHash)) return false;
     
             var variantType = fieldHash[variantName.slice(3)];
             var hasParam = Object.keys(variantType)[0] === 'ov.with_param';
